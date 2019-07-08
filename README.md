@@ -7,49 +7,51 @@
 4. *mostly done*
 5. **Done**
 
-
 ## Current TODO
-1. Manually view all projects ***Done*** - Nick
-2. Display only relevant documents in tree, and create new component to replace Tree View for plant document models. - Nick **DONE**
-3. Automatically update on changes. **Done** - Nick
-4. Be able to change the views in the viewer. **Done** - Nick
-5. Be able to edit properties in the viewer, **is done**
-6. Resolve all warnings/errors. *TBD*
-7. Fix initial button page.
-8. Add scrolling to property. - **Done** Nick
-9. Fix the sign-in button (lacking access to currently fix this). *TBD*
-10. Convert backend to be entirely electron/desktop based. - Nick **Done**
-11. Clean up code base **Done for now** - Nick
-12. Comment parts for explanations **Done** - Nick
-13. Fix CSS formatting *mostly done* - Nick
-14. Fix clashes with electron IPC and configuration of front-back communication. **Done** - Nick
-15. Determine the necessity of webpack in browser runtime environment. **Done** - Nick
-16. Modify dependencies list, strip unused pieces, keep only browser specific portions.
-17. If we end up keeping webpack, reconfigure its options to be better suited, right now its causing some problems on the backend. **Done** - Nick
-18. Add configurable options to options bar, have those be saved in a JSON.
-19. Determine whether/how to implement ipcMain - ipcRenderer communication **Done** - Nick
-20. Get viewport to successfully update **Done** - Nick
-21. Determine whether or not to migrate configuration.ts to a JSON **Done** - Nick
-22. Implement loading circle function upon switching views/imodels/projects. *possibly does not need to be done*
-23. Implement nicer loading functionality. *possibly does not need to be done*
-24. Move select new iModel button to project **done?**
-25. Fix weird character bug (e.g. Miscellaneous). - Nick *in progress*
-26. In bottom properties display widget, add functionality to click on category to display only that category, and click on it again to switch back to all categories
-27. Display both the 3D and 2D views in the Viewport.
-28. Only display and allow to pass in the project, iModel, and drawing names.
-29. Maybe move the Menu button to the window menu or in the Toolbar in the Viewport.
-30. Add unified selection capability back into the tree **Done** - Nick
-31. Pick which project to view. - Zach *in progress*
-32. Pick which drawing to view. - Zach *in progress*
-33. Move dropdown boxes for project, iModel, and drawing selections to the header. - Nick, Zach *pretty much done, just waiting on all the buttons to be fully functional*
-34. Move configuration.ts set-up into the Electron viewer instead. - Zach *in progress*
-35. In Production, fix the list of projects. - Zach *in progress*
-36. In Production, fix the briefcase id error (if this is not just a conncetion issue).
-37. Rework Titles - Nick *mostly done*
-38. Put button selections in the menu
-39. Fix scrolling issue with properties tool - Nick **Done**
-40. Look into token restoration after certain periods of time (eg does token expire after an hour even if using)
-41. Fix configuration reading, comply with config.json *mostly done* - Nick
+
+1.	Fix configuration reading, and comply with config.json. *mostly done* - Nick
+2.	Fix CSS formatting. *mostly done* - Nick
+3.	Rework titles. *motsly done* - Nick
+4.	Resolve all warnings/errors. *mostly done* - Zach
+5.	Pick which project to view. *mostly done* - Zach
+6.	Move dropdown boxes for project, iModel, and drawing selections to the header. *mostly done* (waiting for all buttons to be fully functional) - Nick/Zach
+
+7.	Fix weird character bug (e.g. miscellaneous). *in progress* - Nick 
+8.	Resolve list of projects in production. *in progress* - Zach
+9.	Pick which drawing to view. *in progress* - Zach
+
+10.	Move configuration.ts set-up into the electron viewer instead.
+11.	Fix initial button page.
+12.	Put button selection sin the menu.
+13.	Fix the briefcase id error in production.
+14.	Modify dependencies list, strip unused pieces, and keep only browser specific portions.
+15.	Add configurable options to options bar, and have those be saved in a JSON.
+16.	In the bottom properties display widget, add functionality to click on a category to display only that category, and click on it again to switch back to all categories.
+17.	Display both the 3D and 2D views in the viewport.
+18.	Only display and allow to pass in the projcet, iModel, and drawing names.
+19.	Maybe move the menu button to the window menu or in the toolbar in the viewport.
+20.	Look into token restoration after certain periods of time (i.e. does token expire after an hour even if using it?).
+21.	Implement loading circle function upon switching views/iModels/projects (possibly does not need to be done...).
+22.	Implement nicer loading functionality (possibly does no tneed to be done...).
+23.	Fix the sign-in button (lacking access to currently fix this).
+
+24.	Manually view all projects **Done** - Nick
+25.	Display only relevant documents in tree, and create new component to replace tree view for plant document models. **Done** - Nick
+26.	Automatically update on changes. **Done** - Nick
+27.	Be able to change the views in the viewer. **Done** - Nick
+28.	Be able to edit properties in the viewer. **Done** - Nick
+29.	Add scrolling to property. **Done** - Nick
+30.	Clean up code base. **Done ** - Nick
+31.	Comment parts for explanations. **Done** - Nick
+32.	Convert backend to be entirely electron/desktop based. **Done** - Nick
+33.	Fix clashes with electron IPC and configuration of front-back communication. **Done** - Nick
+34.	Determine the necessity of webpack in browser runtime environment. **Done** - Nick
+35.	If we end up keeping webpack, reconfigure its options to be better suited (right now, it's causing some problems on the backend). **Done** - Nick
+36.	Determine whether/how to implement ipcMain-ipcRenderer communication. **Done** - Nick
+37.	Get viewport to successfully update. **Done** - Nick
+38.	Determine whether or not to migrate configuration.ts to a JSON. **Done** - Nick
+39.	Add unified selection capability back into the tree. **Done** - Nick
+40.	Fix scrolling issue with properties tool. **Done** - Nick
 
 ## Development Setup
 
@@ -59,7 +61,7 @@
 	Go to [Registered Products], and select [+ New Project].
 	Under [iModel Source], use the sample [Bentley Example] with the [Retail Building Sample] selection.
 
-2.    Open the Command Prompt.
+2.  Open the Command Prompt.
 
 3.	Clone the rpeository from GitHub on your local machine with the following command:
 	*	git clone https://github.com/OpenPlantDev/PlantViewer
@@ -70,36 +72,33 @@
 5.	Open the directory in Visual Studio Code with the following command:
 	*	code .
 
-6.	Complete step *(1)* in [src/common/configuration.json] by un-commenting one of the four blocks.
-	- The first block runs the viewer in the *browser* in *Production*.
-	- The second block runs the viewer in the *browser* in *QA*.
-	- The third block runs the viewer in *electron* in *Production*.
-	- The fourth block runs the viewer in *electron* in *QA*.
-	NOTE: Highlighting the block and using [Ctrl + /] will comment/un-comment that section of code.
+6.	Open [src/common/configuration.json] and scroll down to the bottom underneath the "* CONFIGURATION SETTINGS: *" comment.
 
-7.  Complete step *(2)* in [src/common/configuration.json] by setting the project and iModel names.
+7.	Comment/uncomment the lines of code for production/QA (*Production* requires 1 line, and *QA* requires 2 lines).
 
-8.	Save your changes.
+8.	Set the names of the Project, iModel, and Drawing in the lines below.
 
-9.	Type [Ctrl + `] to open the terminal in Visual Studio Code.
+9.	Save your changes.
 
-10.	If you have not done so already, type the following command in the terminal to install the dependencies:
+10.	Type [Ctrl + `] to open the terminal in Visual Studio Code.
+
+11.	If you have not done so already, type the following command in the terminal to install the dependencies:
 	*	npm install
 	NOTE: This only needs to be done one time even if you change the configuration settings.
 
-11.	Type the following command in the terminal to build the application:
+12.	Type the following command in the terminal to build the application:
 	*	npm run build
 
-12.	Type one of the following commands in the terminal to run the applicaiton:
+13.	Type one of the following commands in the terminal to run the applicaiton:
 	- To run in browser:
 		*	npm run start:servers
 	- To run in electron:
 		*	npm run electron
 
-13.	To run in browser, open [localhost:3000] in a web browser.
+14.	To run in browser, open [localhost:3000] in a web browser.
 	To run in electron, a window will open automatically.
 
-14.	*To view other projects/models, repeat steps 6, 7, 8, 9, 11, 12, and 13.*
+15.	*To view other projects/models, repeat steps 6, 7, 8, 9, 11, 12, and 13.*
 	NOTE: Step 10 does not need to be repeated.
 
 ## Git instructions
