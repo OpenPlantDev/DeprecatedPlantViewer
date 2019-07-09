@@ -20,38 +20,39 @@
 8.	Resolve list of projects in production. *in progress* - Zach
 9.	Pick which drawing to view. *in progress* - Zach
 
-10.	Move configuration.ts set-up into the electron viewer instead.
-11.	Fix initial button page.
-12.	Put button selection sin the menu.
-13.	Fix the briefcase id error in production.
-14.	Modify dependencies list, strip unused pieces, and keep only browser specific portions.
-15.	Add configurable options to options bar, and have those be saved in a JSON.
-16.	In the bottom properties display widget, add functionality to click on a category to display only that category, and click on it again to switch back to all categories.
-17.	Display both the 3D and 2D views in the viewport.
-18.	Only display and allow to pass in the projcet, iModel, and drawing names.
-19.	Maybe move the menu button to the window menu or in the toolbar in the viewport.
-20.	Look into token restoration after certain periods of time (i.e. does token expire after an hour even if using it?).
-21.	Implement loading circle function upon switching views/iModels/projects (possibly does not need to be done...).
-22.	Implement nicer loading functionality (possibly does no tneed to be done...).
-23.	Fix the sign-in button (lacking access to currently fix this).
+10.	Fix the broken log-in in QA (right now, no log-in is required, but lacking access to currently fix this).
+11.	Move configuration.ts set-up into the electron viewer instead.
+12.	Fix initial button page.
+13.	Put button selection sin the menu.
+14.	Fix the briefcase id error in production.
+15.	Modify dependencies list, strip unused pieces, and keep only browser specific portions.
+16.	Add configurable options to options bar, and have those be saved in a JSON.
+17.	In the bottom properties display widget, add functionality to click on a category to display only that category, and click on it again to switch back to all categories.
+18.	Display both the 3D and 2D views in the viewport.
+19.	Only display and allow to pass in the projcet, iModel, and drawing names.
+20.	Maybe move the menu button to the window menu or in the toolbar in the viewport.
+21.	Look into token restoration after certain periods of time (i.e. does token expire after an hour even if using it?).
+22.	Implement loading circle function upon switching views/iModels/projects (possibly does not need to be done...).
+23.	Implement nicer loading functionality (possibly does no tneed to be done...).
+24.	Fix the sign-in button (lacking access to currently fix this).
 
-24.	Manually view all projects **Done** - Nick
-25.	Display only relevant documents in tree, and create new component to replace tree view for plant document models. **Done** - Nick
-26.	Automatically update on changes. **Done** - Nick
-27.	Be able to change the views in the viewer. **Done** - Nick
-28.	Be able to edit properties in the viewer. **Done** - Nick
-29.	Add scrolling to property. **Done** - Nick
-30.	Clean up code base. **Done ** - Nick
-31.	Comment parts for explanations. **Done** - Nick
-32.	Convert backend to be entirely electron/desktop based. **Done** - Nick
-33.	Fix clashes with electron IPC and configuration of front-back communication. **Done** - Nick
-34.	Determine the necessity of webpack in browser runtime environment. **Done** - Nick
-35.	If we end up keeping webpack, reconfigure its options to be better suited (right now, it's causing some problems on the backend). **Done** - Nick
-36.	Determine whether/how to implement ipcMain-ipcRenderer communication. **Done** - Nick
-37.	Get viewport to successfully update. **Done** - Nick
-38.	Determine whether or not to migrate configuration.ts to a JSON. **Done** - Nick
-39.	Add unified selection capability back into the tree. **Done** - Nick
-40.	Fix scrolling issue with properties tool. **Done** - Nick
+25.	Manually view all projects **Done** - Nick
+26.	Display only relevant documents in tree, and create new component to replace tree view for plant document models. **Done** - Nick
+27.	Automatically update on changes. **Done** - Nick
+28.	Be able to change the views in the viewer. **Done** - Nick
+29.	Be able to edit properties in the viewer. **Done** - Nick
+30.	Add scrolling to property. **Done** - Nick
+31.	Clean up code base. **Done ** - Nick
+32.	Comment parts for explanations. **Done** - Nick
+33.	Convert backend to be entirely electron/desktop based. **Done** - Nick
+34.	Fix clashes with electron IPC and configuration of front-back communication. **Done** - Nick
+35.	Determine the necessity of webpack in browser runtime environment. **Done** - Nick
+36.	If we end up keeping webpack, reconfigure its options to be better suited (right now, it's causing some problems on the backend). **Done** - Nick
+37.	Determine whether/how to implement ipcMain-ipcRenderer communication. **Done** - Nick
+38.	Get viewport to successfully update. **Done** - Nick
+39.	Determine whether or not to migrate configuration.ts to a JSON. **Done** - Nick
+40.	Add unified selection capability back into the tree. **Done** - Nick
+41.	Fix scrolling issue with properties tool. **Done** - Nick
 
 ## Development Setup
 
