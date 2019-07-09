@@ -199,11 +199,7 @@ export default class App extends React.Component<{}, AppState> {
       }
 
       // Fix to ensure that the dropdown for iModels displays the current iModel at the top
-<<<<<<< HEAD
-      let otherList = (document.getElementById("iModelDropList")) as HTMLSelectElement;
-=======
       const otherList = (document.getElementById("iModelDropList")) as HTMLSelectElement;
->>>>>>> f575a650ef1627ede905419d08c5547cb4e47bbf
       otherList.options[0].innerHTML = otherList.options[1].innerHTML;
     }
 
